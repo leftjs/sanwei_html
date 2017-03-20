@@ -1,0 +1,28 @@
+.event_left,.event_right{
+    padding: 0 50px;
+}
+/*event_left*/
+.event_left{
+    text-align: center;
+}
+.event_left > p{
+    color: #2ea4dd;
+    font-size: 20px;
+}
+.event > a{
+    text-decoration: none;
+    color: #898989;
+}
+.event1 > a{
+    text-decoration: none;
+    color: #2ea4dd;
+}
+.event,.event1{
+    padding-bottom: 20px;
+}
+
+
+/*event_right*/
+.event_detail{
+    background: url("images/about/arrow02.png");
+}
