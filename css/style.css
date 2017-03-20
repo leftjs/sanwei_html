@@ -44,15 +44,38 @@ body {
     align-items: center;
     border: 1px solid #b9def0;
     height: 45px;
+    position: relative;
+    overflow: visible;
 }
 
-.search input {
+.search > input {
     border: none;
+    outline: none;
     height: 43px;
 }
 
-.search img {
+.search > img {
     margin-right: 11px;
+}
+
+.search_result {
+    position: absolute;
+    top: 47px;
+    z-index:1000;
+}
+
+.search_result > a {
+    display: block;
+    width: 201px;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.search_result > a:hover {
+    background: rgb(247,247,247);
 }
 
 /*header*/

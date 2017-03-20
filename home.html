@@ -32,6 +32,16 @@
         <div class="search">
             <input type="text">
             <img src="images/home/search.png" alt="">
+            <div class="search_result">
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+                <a href="http://www.baidu.com">制冷机组</a>
+            </div>
         </div>
 
     </div>
@@ -264,7 +274,10 @@
     <script>
 
         $(document).ready(function () {
+          // banner
           $('.banner').unslider();
+
+          // dropdown
           $('.goods-list > a').hover(function () {
             $('.dropdown_container').css('display', 'none')
             var target = $(this).attr('name')
@@ -274,6 +287,19 @@
           $('.dropdown_wrapper').mouseleave(function () {
             $(this).removeClass('dropdown_open')
           })
+
+
+          // search
+          $('.search_result').hide()
+          $('.search > input').focus(function () {
+            $('.search_result').show()
+          }).blur(function () {
+            setTimeout(function() {
+              $('.search_result').hide()
+
+            }, 200)
+          })
+
         })
     </script>
 </body>
