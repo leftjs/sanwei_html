@@ -241,14 +241,14 @@
 
           // dropdown
           $('.goods-list > a').hover(function () {
-            $('.dropdown_container').css('display', 'none')
-            var target = $(this).attr('name')
-            $('#'+target).css('display', 'flex')
+            $('.dropdown_container').css('display', 'none');
+            var target = $(this).attr('name');
+            $('#'+target).css('display', 'flex');
             $('.dropdown_wrapper').addClass('dropdown_open')
-          })
+          });
           $('.dropdown_wrapper').mouseleave(function () {
             $(this).removeClass('dropdown_open')
-          })
+          });
 
 
           // search
