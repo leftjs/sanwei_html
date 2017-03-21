@@ -109,16 +109,18 @@ body {
     width: 200px;
     display: block;
     text-decoration: none;
+    margin-left: 20px;
 }
 
 .dropdown_item > img {
-    width: 100%
+    width: 100%;
 }
 
 .dropdown_item > p {
-    margin: 0 0 10px;
+    margin: 10px 0;
     font-size: 0.8rem;
     text-align: center;
+    color: #898989;
 }
 
 .dropdown_open {
