@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>enterprise_introduction</title>
+    <title>honor home</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enterprise_introduction.css">
+    <link rel="stylesheet" href="css/bigEvent.css">
 </head>
 <body>
 <!--header-->
@@ -37,31 +38,69 @@
         <div class="classified">
             <a href="home.html">首页</a>
             >
-            <a href="">企业介绍</a>
+            <a href="">大事件</a>
         </div>
 
     </div>
     <div class="service">
         <div class="service_title">
-            <a style="color:#2aabd2;" href="">企业介绍</a>
+            <a  href="enterprise_introduction.html">企业介绍</a>
             <a href="boss_culture.html">老板文化</a>
             <a href="bigEvent.html">大事件</a>
-            <a href="">荣誉殿堂</a>
+            <a style="color:#2aabd2;" href="#">荣誉殿堂</a>
             <a href="">厨源文化</a>
         </div>
         <div class="about">
-            <div class="about_left">
-                <img src="images/about/gy_left.jpg" alt="">
+            <div class="event_left">
+                <p>老板大事件</p>
+                <div class="event">
+                    <a href="#">
+                        <p></p>
+                        <p>2011年-至今</p>
+                    </a>
+                </div>
+                <div class="event">
+                    <a href="honor01.html">
+                        <p></p>
+                        <p>2000年-2010年</p>
+                    </a>
+                </div>
+                <div class="event">
+                    <a href="honor02.html">
+                        <p></p>
+                        <p>1988年-1999年</p>
+                    </a>
+                </div>
+                <img src="images/about/dot.png" alt="">
+                <div class="event1">
+                    <a href="honor03.html">
+                        <p></p>
+                        <p>1979年-1987年</p>
+                    </a>
+                </div>
             </div>
-            <div class="about_right">
-                <p class="right_p1">
-                    <span>企业介绍</span>
-                </p>
-                <p class="right_p2">始创于1979年的老板电器(股票代码：002508)，是中国厨房电器行业的领导者，也是迄今为止历史最悠久的专业厨房电器品牌。</p>
-                <p>从缔造中国第一代吸油烟机，到今天，已有超过3500万户家庭正享受着老板电器带来的轻松烹饪生活。在吸油烟机市场，全国销量前茅的成绩，老板已成为吸油烟机在中国的代名词。</p>
-                <p>30多年来，老板始终致力于用卓越领先的科技和完美可靠的品质，帮助中国家庭和他们的厨房建立起更紧密的纽带关系。老板提供包括吸油烟机、家用灶具、消毒柜、烤箱、蒸汽炉、微波炉、电压力煲等厨房电器的整体解决方案。凭借在吸油烟机核心技术——大吸力方面的突破，老板创造出最适合中国厨房的大吸力油烟机。同时，老板自主创新拥有超百项产品专利技术，包括双劲芯、免拆洗、主火中置、3D速火、回型杀菌等</p>
-                <p>自2010年，老板电器登陆资本市场，成为国内首家登陆资本市场的高端厨电企业，完成了“从制造向创造”的转型升级。</p>
-                <p>着眼未来，老板继续致力于改善烹饪环境，把中国悠久的饮食文化与先进的科学技术相结合，让每个家庭都享受到由精湛科技带来的轻松烹饪，让科技更具人文气息，让烹饪变的更有乐趣，拉近家人间心与心的距离，为世界构建更多幸福的家。</p>
+            <div class="event_right">
+                <img src="images/about/arrow02.png" alt="">
+                <div class="event_detail">
+                    <div class="event_div">
+                        <div class="event_list">
+                            <h2 style="color:#2ea4dd ">2016</h2>
+                            <a href="javascript:show(49)">
+                                <img id="img49" src="images/about/arrow03.png">
+                            </a>
+                        </div>
+                        <div class="event_text" id="div49">
+                            <div class="event_picture">
+                                <img src="images/about/honor05.jpg" alt="">
+                            </div>
+                            <div class="event_text_detail" style="border-bottom: 1px solid #dcdcdc;">
+">
+                                <span>17年销量夺金</span><br>
+                                <p>自1979 年成立以来，老板始终坚持立足于厨房电器行业，以不断创新的精湛科技引领行业发展。37年的行业专注与品质坚持，令老板取得了辉煌的成果，赢得了众多消费者的信赖。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,7 +177,19 @@
         </div>
     </div>
 </footer>
-
+<script src="js/jquery-latest.min.js"></script>
+<script type="text/javascript">
+    function show(id) {
+        var src = $("#img" + id)[0].src;
+        if (src.indexOf("arrow03") > 0) {
+            $("#img" + id).attr('src', src.replace("arrow03", "arrow04"));
+            $("#div" + id).hide();
+        } else {
+            $("#img" + id).attr('src', src.replace("arrow04", "arrow03"));
+            $("#div" + id).show();
+        }
+    }
+</script>
 </body>
 </html>
 

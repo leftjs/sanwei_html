@@ -1,5 +1,10 @@
-.event_left,.event_right{
-    padding: 0 50px;
+.about {
+    align-items: flex-start;
+    padding: 0 0 100px 0;
+}
+
+.event_left{
+    margin: 0 100px;
 }
 /*event_left*/
 .event_left{
@@ -23,6 +28,62 @@
 
 
 /*event_right*/
+.event_right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 750px;
+    margin-top: 50px;
+    background: #fbfbfb;
+}
+.event_right > img{
+    padding-top: 5px;
+}
+
+/*event_list*/
+.event_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #dcdcdc;
+}
+
+.event_list > h2{
+    width: 700px;
+    padding-top: 10px;
+}
+
 .event_detail{
-    background: url("images/about/arrow02.png");
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.event_detail > div:last-child{
+    border-bottom: 1px solid #dcdcdc;
+}
+/*event_text*/
+.event_text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.event_picture{
+    width: 120px;
+}
+
+
+.event_picture > img{
+    width: 100%;
+}
+
+.event_text_detail{
+    margin-left: 30px;
+}
+
+.event_text_detail > span{
+    font-size: 16px;
+    color: #898989;
+}
+.event_text_detail > p{
+    font-size: 14px;
+    color: #898989;
 }
