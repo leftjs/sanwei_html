@@ -261,16 +261,18 @@
 <script src="js/jquery-latest.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        // dropdown
-        $('.goods-list > a').hover(function () {
-            $('.dropdown_container').css('display', 'none');
-            var target = $(this).attr('name');
-            $('#'+target).css('display', 'flex');
-            $('.dropdown_wrapper').addClass('dropdown_open');
-        });
-        $('.dropdown_wrapper').mouseleave(function () {
-            $(this).removeClass('dropdown_open');
-        });
+      // dropdown
+      $('.goods-list > a').hover(function () {
+        $('.dropdown_container').css('display', 'none');
+        var target = $(this).attr('name');
+        $('#'+target).css('display', 'flex');
+        $('.dropdown_wrapper').addClass('dropdown_open')
+      }).mouseleave(function() {
+        $('.dropdown_wrapper').removeClass('dropdown_open');
+      });
+      $('.dropdown_wrapper').mouseenter(function () {
+        $(this).addClass('dropdown_open')
+      });
 
         // search
         $('.search_result').hide();
@@ -288,4 +290,3 @@
 </script>
 </body>
 </html>
-

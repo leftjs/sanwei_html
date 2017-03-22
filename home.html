@@ -245,9 +245,11 @@
             var target = $(this).attr('name');
             $('#'+target).css('display', 'flex');
             $('.dropdown_wrapper').addClass('dropdown_open')
+          }).mouseleave(function() {
+            $('.dropdown_wrapper').removeClass('dropdown_open');
           });
-          $('.dropdown_wrapper').mouseleave(function () {
-            $(this).removeClass('dropdown_open')
+          $('.dropdown_wrapper').mouseenter(function () {
+            $(this).addClass('dropdown_open')
           });
 
 
@@ -266,4 +268,3 @@
     </script>
 </body>
 </html>
-
