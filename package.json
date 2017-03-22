@@ -1,0 +1,14 @@
+{
+  "name": "sanwei_html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leftjs/sanwei_html.git",
+  "author": "张加胜 <leftjs@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "push-dir": "^0.4.1"
+  },
+  "scripts": {
+    "deploy": "push-dir --dir=. --branch=gh-pages --cleanup"
+  }
+}

@@ -1,0 +1,41 @@
+.culture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1220px;
+    margin-top: 50px;
+}
+
+.culture_left, .culture_right {
+    padding: 0 70px;
+}
+
+/*culture_right*/
+
+.culture_right{
+    width: 750px;
+}
+#div_navigation{
+    font-size: 15px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 13px;
+}
+#div_navigation > a{
+    color: #727171;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.text-span{
+    border-bottom: 2px solid #2aabd2;
+}
+.culture_right > div{
+    padding-top: 10px;
+}
+.culture_right div > p{
+    font-size: 14px;
+    color: #727171;
+}
+.culture_right div p > span{
+    color: #2aabd2;
+}
